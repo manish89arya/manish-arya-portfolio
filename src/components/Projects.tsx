@@ -4,21 +4,21 @@ import { FolderGit2, Globe, CheckCircle } from "lucide-react";
 
 const projects = [
   {
-    title: "Automated Testing Framework",
-    description: "Developed a comprehensive automated testing framework using Selenium and TestNG, reducing testing time by 60%",
-    tech: ["Selenium", "TestNG", "Java"],
+    title: "Test Automation Framework",
+    description: "Developed a hybrid test automation framework using Selenium, TestNG, and RestAssured. Implemented Page Object Model and Data-Driven testing approaches.",
+    tech: ["Selenium", "TestNG", "Java", "RestAssured"],
     icon: <CheckCircle className="w-6 h-6 text-accent" />,
   },
   {
-    title: "CI/CD Pipeline Implementation",
-    description: "Implemented end-to-end CI/CD pipeline for automated testing, improving deployment reliability by 40%",
-    tech: ["Jenkins", "Docker", "GitLab CI"],
+    title: "Performance Testing Suite",
+    description: "Created comprehensive performance testing solutions using JMeter and Grafana for monitoring. Achieved significant improvement in application performance.",
+    tech: ["JMeter", "Grafana", "Jenkins", "Docker"],
     icon: <FolderGit2 className="w-6 h-6 text-accent" />,
   },
   {
-    title: "API Testing Suite",
-    description: "Created an extensive API testing suite using Postman and Newman, achieving 95% test coverage",
-    tech: ["Postman", "Newman", "JavaScript"],
+    title: "CI/CD Pipeline Implementation",
+    description: "Implemented end-to-end CI/CD pipelines using Jenkins, Docker, and Kubernetes for automated testing and deployment.",
+    tech: ["Jenkins", "Docker", "Kubernetes", "Git"],
     icon: <Globe className="w-6 h-6 text-accent" />,
   },
 ];

@@ -13,11 +13,11 @@ export const Contact = () => {
         >
           <h2 className="text-3xl font-bold mb-8">Let's Connect</h2>
           <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-            Interested in quality-driven software development? Let's discuss how I can contribute to your team's success.
+            Looking to enhance your team's quality assurance practices? Let's discuss how my expertise in test automation and DevOps can contribute to your success.
           </p>
           <div className="flex justify-center space-x-6">
             <motion.a
-              href="mailto:your.email@example.com"
+              href="mailto:manish89arya@gmail.com"
               className="flex items-center justify-center w-12 h-12 rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -25,7 +25,7 @@ export const Contact = () => {
               <Mail className="w-5 h-5" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/manish89arya/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
@@ -35,7 +35,7 @@ export const Contact = () => {
               <Linkedin className="w-5 h-5" />
             </motion.a>
             <motion.a
-              href="https://github.com"
+              href="https://github.com/manish89arya"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"

@@ -4,21 +4,27 @@ import { Calendar } from "lucide-react";
 const experiences = [
   {
     title: "Senior QA Engineer",
-    company: "Tech Solutions Inc.",
-    period: "2020 - Present",
-    description: "Led end-to-end testing strategies for enterprise applications, reducing post-release issues by 75%.",
+    company: "Nagarro",
+    period: "2021 - Present",
+    description: "Leading test automation initiatives using Selenium, TestNG, and RestAssured. Implementing CI/CD pipelines and maintaining test frameworks for multiple projects.",
   },
   {
-    title: "Test Automation Engineer",
-    company: "Digital Innovations Co.",
-    period: "2018 - 2020",
-    description: "Developed and maintained automated test frameworks, achieving 90% test coverage.",
+    title: "Senior Software Engineer",
+    company: "Infogain India Pvt Ltd",
+    period: "2019 - 2021",
+    description: "Developed and maintained automated test suites for web applications. Implemented performance testing using JMeter and automated API testing.",
   },
   {
-    title: "Quality Assurance Analyst",
-    company: "Software Systems Ltd.",
-    period: "2016 - 2018",
-    description: "Conducted comprehensive testing for web and mobile applications, ensuring high-quality deliverables.",
+    title: "Software Engineer",
+    company: "HCL Technologies",
+    period: "2016 - 2019",
+    description: "Specialized in test automation using Selenium WebDriver and TestNG. Created and maintained test frameworks and conducted performance testing.",
+  },
+  {
+    title: "Software Engineer",
+    company: "Tata Consultancy Services",
+    period: "2013 - 2016",
+    description: "Developed and executed test automation scripts using Selenium and QTP. Performed functional and regression testing for web applications.",
   },
 ];
 
