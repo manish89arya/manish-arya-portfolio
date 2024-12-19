@@ -1,18 +1,34 @@
 import { motion } from "framer-motion";
-import { CheckCircle } from "lucide-react";
+import { Code, Database, Bug, ShieldCheck, TestTube } from "lucide-react";
 
 const skills = [
   {
     category: "Testing",
-    items: ["Selenium", "JUnit", "TestNG", "Cypress", "Postman"],
+    items: [
+      { name: "Selenium", icon: <TestTube className="w-5 h-5" /> },
+      { name: "JUnit", icon: <Bug className="w-5 h-5" /> },
+      { name: "TestNG", icon: <ShieldCheck className="w-5 h-5" /> },
+      { name: "Cypress", icon: <TestTube className="w-5 h-5" /> },
+      { name: "Postman", icon: <Code className="w-5 h-5" /> },
+    ],
   },
   {
     category: "Automation",
-    items: ["Jenkins", "GitLab CI", "Docker", "Kubernetes"],
+    items: [
+      { name: "Jenkins", icon: <Database className="w-5 h-5" /> },
+      { name: "GitLab CI", icon: <Code className="w-5 h-5" /> },
+      { name: "Docker", icon: <Database className="w-5 h-5" /> },
+      { name: "Kubernetes", icon: <Database className="w-5 h-5" /> },
+    ],
   },
   {
     category: "Programming",
-    items: ["Java", "Python", "JavaScript", "SQL"],
+    items: [
+      { name: "Java", icon: <Code className="w-5 h-5" /> },
+      { name: "Python", icon: <Code className="w-5 h-5" /> },
+      { name: "JavaScript", icon: <Code className="w-5 h-5" /> },
+      { name: "SQL", icon: <Database className="w-5 h-5" /> },
+    ],
   },
 ];
 
@@ -42,9 +58,9 @@ export const Skills = () => {
                 </h3>
                 <ul className="space-y-3">
                   {skillSet.items.map((skill) => (
-                    <li key={skill} className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-accent" />
-                      <span>{skill}</span>
+                    <li key={skill.name} className="flex items-center space-x-3">
+                      <span className="text-accent">{skill.icon}</span>
+                      <span>{skill.name}</span>
                     </li>
                   ))}
                 </ul>
