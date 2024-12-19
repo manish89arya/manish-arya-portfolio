@@ -1,33 +1,71 @@
 import { motion } from "framer-motion";
-import { Code, Database, Bug, ShieldCheck, TestTube } from "lucide-react";
 
 const skills = [
   {
     category: "Testing",
     items: [
-      { name: "Selenium", icon: <TestTube className="w-5 h-5" /> },
-      { name: "JUnit", icon: <Bug className="w-5 h-5" /> },
-      { name: "TestNG", icon: <ShieldCheck className="w-5 h-5" /> },
-      { name: "Cypress", icon: <TestTube className="w-5 h-5" /> },
-      { name: "Postman", icon: <Code className="w-5 h-5" /> },
+      { 
+        name: "Selenium", 
+        icon: "https://www.selenium.dev/images/selenium_logo_square_green.png" 
+      },
+      { 
+        name: "JUnit", 
+        icon: "https://junit.org/junit5/assets/img/junit5-logo.png" 
+      },
+      { 
+        name: "TestNG", 
+        icon: "https://testng.org/images/testng-logo.png" 
+      },
+      { 
+        name: "Cypress", 
+        icon: "https://www.cypress.io/images/layouts/cypress-logo.svg" 
+      },
+      { 
+        name: "Postman", 
+        icon: "https://www.postman.com/_ar-assets/images/postman-logo-icon-orange.svg" 
+      },
     ],
   },
   {
     category: "Automation",
     items: [
-      { name: "Jenkins", icon: <Database className="w-5 h-5" /> },
-      { name: "GitLab CI", icon: <Code className="w-5 h-5" /> },
-      { name: "Docker", icon: <Database className="w-5 h-5" /> },
-      { name: "Kubernetes", icon: <Database className="w-5 h-5" /> },
+      { 
+        name: "Jenkins", 
+        icon: "https://www.jenkins.io/images/logos/jenkins/jenkins.png" 
+      },
+      { 
+        name: "GitLab CI", 
+        icon: "https://about.gitlab.com/images/press/logo/svg/gitlab-icon-rgb.svg" 
+      },
+      { 
+        name: "Docker", 
+        icon: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" 
+      },
+      { 
+        name: "Kubernetes", 
+        icon: "https://kubernetes.io/images/favicon.png" 
+      },
     ],
   },
   {
     category: "Programming",
     items: [
-      { name: "Java", icon: <Code className="w-5 h-5" /> },
-      { name: "Python", icon: <Code className="w-5 h-5" /> },
-      { name: "JavaScript", icon: <Code className="w-5 h-5" /> },
-      { name: "SQL", icon: <Database className="w-5 h-5" /> },
+      { 
+        name: "Java", 
+        icon: "https://dev.java/assets/images/java-logo-vert-blk.png" 
+      },
+      { 
+        name: "Python", 
+        icon: "https://www.python.org/static/community_logos/python-logo-generic.svg" 
+      },
+      { 
+        name: "JavaScript", 
+        icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" 
+      },
+      { 
+        name: "SQL", 
+        icon: "https://www.postgresql.org/media/img/about/press/elephant.png" 
+      },
     ],
   },
 ];
@@ -56,10 +94,14 @@ export const Skills = () => {
                 <h3 className="text-xl font-semibold mb-4 text-accent">
                   {skillSet.category}
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-4">
                   {skillSet.items.map((skill) => (
                     <li key={skill.name} className="flex items-center space-x-3">
-                      <span className="text-accent">{skill.icon}</span>
+                      <img 
+                        src={skill.icon} 
+                        alt={`${skill.name} logo`} 
+                        className="w-6 h-6 object-contain"
+                      />
                       <span>{skill.name}</span>
                     </li>
                   ))}
