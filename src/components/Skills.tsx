@@ -6,23 +6,23 @@ const skills = [
     items: [
       { 
         name: "Selenium", 
-        icon: "https://www.selenium.dev/images/selenium_logo_square_green.png" 
+        icon: "https://raw.githubusercontent.com/SeleniumHQ/seleniumhq.github.io/trunk/selenium-website/static/images/selenium_logo_square_green.png" 
       },
       { 
         name: "JUnit", 
-        icon: "https://junit.org/junit5/assets/img/junit5-logo.png" 
+        icon: "https://avatars.githubusercontent.com/u/874086?s=200&v=4" 
       },
       { 
         name: "TestNG", 
-        icon: "https://testng.org/images/testng-logo.png" 
+        icon: "https://e7.pngegg.com/pngimages/640/776/png-clipart-testng-logo-software-testing-software-framework-computer-icons-automation-testing-angle-text.png" 
       },
       { 
         name: "Cypress", 
-        icon: "https://www.cypress.io/images/layouts/cypress-logo.svg" 
+        icon: "https://asset.brandfetch.io/idIq_kF0rb/idv3zwmSiY.jpeg" 
       },
       { 
         name: "Postman", 
-        icon: "https://www.postman.com/_ar-assets/images/postman-logo-icon-orange.svg" 
+        icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" 
       },
     ],
   },
@@ -31,19 +31,19 @@ const skills = [
     items: [
       { 
         name: "Jenkins", 
-        icon: "https://www.jenkins.io/images/logos/jenkins/jenkins.png" 
+        icon: "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" 
       },
       { 
         name: "GitLab CI", 
-        icon: "https://about.gitlab.com/images/press/logo/svg/gitlab-icon-rgb.svg" 
+        icon: "https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" 
       },
       { 
         name: "Docker", 
-        icon: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" 
+        icon: "https://www.vectorlogo.zone/logos/docker/docker-icon.svg" 
       },
       { 
         name: "Kubernetes", 
-        icon: "https://kubernetes.io/images/favicon.png" 
+        icon: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" 
       },
     ],
   },
@@ -52,19 +52,19 @@ const skills = [
     items: [
       { 
         name: "Java", 
-        icon: "https://dev.java/assets/images/java-logo-vert-blk.png" 
+        icon: "https://www.vectorlogo.zone/logos/java/java-icon.svg" 
       },
       { 
         name: "Python", 
-        icon: "https://www.python.org/static/community_logos/python-logo-generic.svg" 
+        icon: "https://www.vectorlogo.zone/logos/python/python-icon.svg" 
       },
       { 
         name: "JavaScript", 
-        icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" 
+        icon: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" 
       },
       { 
         name: "SQL", 
-        icon: "https://www.postgresql.org/media/img/about/press/elephant.png" 
+        icon: "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" 
       },
     ],
   },
