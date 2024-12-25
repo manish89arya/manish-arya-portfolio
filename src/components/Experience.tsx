@@ -27,6 +27,16 @@ const experiences = [
     ],
   },
   {
+    title: "Test Engineer",
+    company: "Madhya Pradesh Agency For Promotion Of Information Technology",
+    location: "Bhopal, Madhya Pradesh",
+    period: "08/2020 - 11/2020",
+    achievements: [
+      "Developed comprehensive test strategy in Azure DevOps with 100% requirements coverage and traceability",
+      "Built scalable API testing framework with Postman, cutting regression testing time by 70% while enhancing service reliability",
+    ],
+  },
+  {
     title: "Team Lead in Test",
     company: "PayU Payments Pvt Ltd",
     location: "Gurugram, Haryana",
@@ -36,6 +46,18 @@ const experiences = [
       "Built mobile testing framework using Selenium with Java, Cucumber and Appium for PayU app/SDK",
       "Managed end-to-end QA processes with zero critical production bugs",
       "Led 3-person QA team while driving agile methodology adoption",
+    ],
+  },
+  {
+    title: "Business Management Analyst",
+    company: "Systango Infosoft Pvt Ltd",
+    location: "Indore, Madhya Pradesh",
+    period: "01/2014 - 10/2015",
+    achievements: [
+      "Documented user stories and requirements through stakeholder collaboration, minimizing requirement gaps",
+      "Created detailed requirement docs and facilitated business-technical team discussions",
+      "Improved project forecasting by tracking development estimates and client billing",
+      "Conducted testing across iOS, Android, tablets and web platforms",
     ],
   },
 ];

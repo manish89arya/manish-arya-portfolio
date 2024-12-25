@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Mail, Phone, Github, Linkedin, FileText } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -8,8 +9,31 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          className="space-y-6"
         >
-          <span className="inline-block px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full mb-4">
+          <div className="flex justify-center">
+            <motion.img
+              src="/lovable-uploads/9abc9e5f-d32f-4320-9896-da6bb1abdf4a.png"
+              alt="Profile"
+              className="w-48 h-48 rounded-full object-cover border-4 border-accent/20 shadow-lg"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            />
+          </div>
+          
+          <div className="flex justify-center gap-4 flex-wrap">
+            <a href="tel:+919893070471" className="flex items-center gap-2 text-gray-600 hover:text-accent">
+              <Phone className="w-4 h-4" />
+              <span>+91 989 307 0471</span>
+            </a>
+            <a href="mailto:manish89arya@gmail.com" className="flex items-center gap-2 text-gray-600 hover:text-accent">
+              <Mail className="w-4 h-4" />
+              <span>manish89arya@gmail.com</span>
+            </a>
+          </div>
+
+          <span className="inline-block px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">
             Senior SDET & QA Lead
           </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
@@ -25,7 +49,7 @@ export const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="flex justify-center gap-4"
+            className="flex justify-center gap-4 flex-wrap"
           >
             <a
               href="#contact"
