@@ -5,6 +5,7 @@ const experiences = [
   {
     title: "SDET-III",
     company: "Airtel Payments Bank",
+    logo: "/lovable-uploads/airtel-logo.png", // You'll need to upload this
     location: "Bhopal, Madhya Pradesh",
     period: "03/2023 - Present",
     description: "Leading mobile and API automation initiatives while mentoring junior QA team members."
@@ -12,6 +13,7 @@ const experiences = [
   {
     title: "Sr. QA Engineer",
     company: "Renegade Insurance",
+    logo: "/lovable-uploads/renegade-logo.png", // You'll need to upload this
     location: "Bhopal, Madhya Pradesh",
     period: "12/2020 - 03/2023",
     description: "Led framework evaluation and implementation while serving as Acting Lead for the QA team."
@@ -19,6 +21,7 @@ const experiences = [
   {
     title: "Test Engineer",
     company: "Madhya Pradesh Agency For Promotion Of Information Technology",
+    logo: "/lovable-uploads/mapit-logo.png", // You'll need to upload this
     location: "Bhopal, Madhya Pradesh",
     period: "08/2020 - 11/2020",
     description: "Developed test strategies and frameworks for government management portals."
@@ -26,6 +29,7 @@ const experiences = [
   {
     title: "Team Lead in Test",
     company: "PayU Payments Pvt Ltd",
+    logo: "/lovable-uploads/payu-logo.png", // You'll need to upload this
     location: "Gurugram, Haryana",
     period: "10/2015 - 07/2020",
     description: "Led QA team and managed end-to-end testing processes for payment processing applications."
@@ -33,6 +37,7 @@ const experiences = [
   {
     title: "Business Management Analyst",
     company: "Systango Infosoft Pvt Ltd",
+    logo: "/lovable-uploads/systango-logo.png", // You'll need to upload this
     location: "Indore, Madhya Pradesh",
     period: "01/2014 - 10/2015",
     description: "Managed requirements documentation and testing for social media platform development."
@@ -61,15 +66,24 @@ export const Experience = () => {
                 className="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
               >
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900">{exp.title}</h3>
-                    <div className="flex items-center gap-2 text-gray-600 mt-1">
-                      <Building2 className="w-4 h-4" />
-                      <span>{exp.company}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-600 mt-1">
-                      <MapPin className="w-4 h-4" />
-                      <span>{exp.location}</span>
+                  <div className="flex items-center gap-4">
+                    {exp.logo && (
+                      <img 
+                        src={exp.logo} 
+                        alt={`${exp.company} logo`}
+                        className="w-12 h-12 object-contain"
+                      />
+                    )}
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900">{exp.title}</h3>
+                      <div className="flex items-center gap-2 text-gray-600 mt-1">
+                        <Building2 className="w-4 h-4" />
+                        <span>{exp.company}</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-gray-600 mt-1">
+                        <MapPin className="w-4 h-4" />
+                        <span>{exp.location}</span>
+                      </div>
                     </div>
                   </div>
                   <div className="flex items-center gap-2 text-accent mt-2 md:mt-0">
