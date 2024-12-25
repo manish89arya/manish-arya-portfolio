@@ -7,58 +7,35 @@ const experiences = [
     company: "Airtel Payments Bank",
     location: "Bhopal, Madhya Pradesh",
     period: "03/2023 - Present",
-    achievements: [
-      "Led mobile automation testing for Airtel Merchant Android app, leveraging Appium with Java to reduce manual testing effort by 30%",
-      "Architected end-to-end testing framework integrating Karate for API automation, improving test environment stability by 90%",
-      "Leveraged ARCOS for real-time log analysis across service layers",
-      "Standardized test documentation using Zephyr and Confluence, cutting new team member onboarding time by 50%",
-    ],
+    description: "Leading mobile and API automation initiatives while mentoring junior QA team members."
   },
   {
     title: "Sr. QA Engineer",
     company: "Renegade Insurance",
     location: "Bhopal, Madhya Pradesh",
     period: "12/2020 - 03/2023",
-    achievements: [
-      "Led framework evaluation using PUGH matrix analysis to select optimal testing tools",
-      "Designed scalable API automation framework with Postman and Karate, achieving 70% test coverage",
-      "Implemented end-to-end CI/CD with Azure Pipelines",
-      "Built maintainable Selenium WebDriver framework in Java, reducing maintenance overhead by 30%",
-    ],
+    description: "Led framework evaluation and implementation while serving as Acting Lead for the QA team."
   },
   {
     title: "Test Engineer",
     company: "Madhya Pradesh Agency For Promotion Of Information Technology",
     location: "Bhopal, Madhya Pradesh",
     period: "08/2020 - 11/2020",
-    achievements: [
-      "Developed comprehensive test strategy in Azure DevOps with 100% requirements coverage and traceability",
-      "Built scalable API testing framework with Postman, cutting regression testing time by 70% while enhancing service reliability",
-    ],
+    description: "Developed test strategies and frameworks for government management portals."
   },
   {
     title: "Team Lead in Test",
     company: "PayU Payments Pvt Ltd",
     location: "Gurugram, Haryana",
     period: "10/2015 - 07/2020",
-    achievements: [
-      "Automated test data generation with JMeter, reducing merchant onboarding data creation time by 90%",
-      "Built mobile testing framework using Selenium with Java, Cucumber and Appium for PayU app/SDK",
-      "Managed end-to-end QA processes with zero critical production bugs",
-      "Led 3-person QA team while driving agile methodology adoption",
-    ],
+    description: "Led QA team and managed end-to-end testing processes for payment processing applications."
   },
   {
     title: "Business Management Analyst",
     company: "Systango Infosoft Pvt Ltd",
     location: "Indore, Madhya Pradesh",
     period: "01/2014 - 10/2015",
-    achievements: [
-      "Documented user stories and requirements through stakeholder collaboration, minimizing requirement gaps",
-      "Created detailed requirement docs and facilitated business-technical team discussions",
-      "Improved project forecasting by tracking development estimates and client billing",
-      "Conducted testing across iOS, Android, tablets and web platforms",
-    ],
+    description: "Managed requirements documentation and testing for social media platform development."
   },
 ];
 
@@ -100,11 +77,7 @@ export const Experience = () => {
                     <span>{exp.period}</span>
                   </div>
                 </div>
-                <ul className="list-disc list-inside space-y-2 text-gray-600">
-                  {exp.achievements.map((achievement, i) => (
-                    <li key={i} className="leading-relaxed">{achievement}</li>
-                  ))}
-                </ul>
+                <p className="text-gray-600 mt-2">{exp.description}</p>
               </motion.div>
             ))}
           </div>
