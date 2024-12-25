@@ -10,15 +10,16 @@ export const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <span className="inline-block px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full mb-4">
-            Senior QA Engineer & SDET
+            Senior SDET & QA Lead
           </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
             Driving Quality Through
-            <span className="text-accent"> Automation Excellence</span>
+            <span className="text-accent"> Test Automation Excellence</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            10+ years of expertise in Test Automation, Performance Testing, and DevOps practices.
-            Specializing in building robust test frameworks and CI/CD pipelines.
+            Software QA professional with 9+ years of experience, specializing in Web, API, and Mobile automation. 
+            Strong domain knowledge in ecommerce, fintech, and insurance sectors, with a proven track record of 
+            driving continuous improvement across cross-functional teams.
           </p>
           <motion.div
             initial={{ opacity: 0 }}
