@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, FileText } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -43,6 +43,16 @@ export const Contact = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Github className="w-5 h-5" />
+            </motion.a>
+            <motion.a
+              href="https://manish89arya.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-12 h-12 rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FileText className="w-5 h-5" />
             </motion.a>
           </div>
         </motion.div>

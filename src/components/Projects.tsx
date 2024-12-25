@@ -1,25 +1,25 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { FolderGit2, Globe, CheckCircle } from "lucide-react";
+import { Smartphone, Globe, Gauge } from "lucide-react";
 
 const projects = [
   {
-    title: "Test Automation Framework",
-    description: "Developed a hybrid test automation framework using Selenium, TestNG, and RestAssured. Implemented Page Object Model and Data-Driven testing approaches.",
-    tech: ["Selenium", "TestNG", "Java", "RestAssured"],
-    icon: <CheckCircle className="w-6 h-6 text-accent" />,
+    title: "PayU Mobile App & SDK",
+    description: "Led end-to-end testing for PayU's mobile applications and SDK integration. Built comprehensive mobile testing framework using Selenium, Java, Cucumber and Appium.",
+    tech: ["Appium", "Selenium", "Java", "Cucumber"],
+    icon: <Smartphone className="w-6 h-6 text-accent" />,
   },
   {
-    title: "Performance Testing Suite",
-    description: "Created comprehensive performance testing solutions using JMeter and Grafana for monitoring. Achieved significant improvement in application performance.",
-    tech: ["JMeter", "Grafana", "Jenkins", "Docker"],
-    icon: <FolderGit2 className="w-6 h-6 text-accent" />,
-  },
-  {
-    title: "CI/CD Pipeline Implementation",
-    description: "Implemented end-to-end CI/CD pipelines using Jenkins, Docker, and Kubernetes for automated testing and deployment.",
-    tech: ["Jenkins", "Docker", "Kubernetes", "Git"],
+    title: "Merchant Onboarding Automation",
+    description: "Automated test data generation process for merchant onboarding, reducing data creation time by 90% while ensuring data quality and consistency.",
+    tech: ["JMeter", "Java", "MySQL"],
     icon: <Globe className="w-6 h-6 text-accent" />,
+  },
+  {
+    title: "Performance Testing Framework",
+    description: "Designed and implemented performance testing solutions using JMeter and Grafana, significantly improving application performance metrics.",
+    tech: ["JMeter", "Grafana", "Docker"],
+    icon: <Gauge className="w-6 h-6 text-accent" />,
   },
 ];
 

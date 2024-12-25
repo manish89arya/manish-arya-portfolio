@@ -1,53 +1,26 @@
 import { motion } from "framer-motion";
-import { Code, Cog, Bug, Database, GitBranch, Laptop, BarChart, ClipboardList } from "lucide-react";
+import { Code, Database, GitBranch, Laptop, Terminal, TestTube, Bug, Wrench, Server, Blocks } from "lucide-react";
 
 const skills = [
   {
     category: "Programming",
     icon: <Code className="w-6 h-6 text-accent" />,
-    items: [
-      { name: "Java", level: "Expert" },
-      { name: "Karate DSL", level: "Advanced" },
-      { name: "JavaScript", level: "Intermediate" },
-      { name: "Python", level: "Intermediate" },
-      { name: "Bash", level: "Intermediate" },
-    ],
+    items: ["Java", "Karate DSL", "Gherkin", "JavaScript", "Python", "Bash"],
   },
   {
     category: "Test Automation",
-    icon: <Bug className="w-6 h-6 text-accent" />,
-    items: [
-      { name: "Selenium", level: "Expert" },
-      { name: "Appium", level: "Expert" },
-      { name: "TestNG", level: "Expert" },
-      { name: "Rest Assured", level: "Advanced" },
-      { name: "Cucumber", level: "Advanced" },
-      { name: "Postman", level: "Expert" },
-      { name: "JMeter", level: "Advanced" },
-    ],
+    icon: <TestTube className="w-6 h-6 text-accent" />,
+    items: ["Selenium", "Appium", "TestNG", "Rest Assured", "Cucumber", "Postman", "JMeter", "GraphQL"],
   },
   {
     category: "DevOps & Infrastructure",
     icon: <GitBranch className="w-6 h-6 text-accent" />,
-    items: [
-      { name: "Git", level: "Expert" },
-      { name: "Jenkins", level: "Advanced" },
-      { name: "Docker", level: "Intermediate" },
-      { name: "Azure Pipelines", level: "Advanced" },
-      { name: "MySQL", level: "Intermediate" },
-      { name: "MongoDB", level: "Intermediate" },
-    ],
+    items: ["Git", "Jenkins", "Azure Pipelines", "Docker", "MySQL", "MongoDB"],
   },
   {
     category: "Tools & IDEs",
     icon: <Laptop className="w-6 h-6 text-accent" />,
-    items: [
-      { name: "IntelliJ", level: "Expert" },
-      { name: "VSCode", level: "Advanced" },
-      { name: "Android Studio", level: "Advanced" },
-      { name: "Xcode", level: "Intermediate" },
-      { name: "Datadog", level: "Intermediate" },
-    ],
+    items: ["IntelliJ", "VSCode", "Eclipse", "Android Studio", "Xcode", "Datadog"],
   },
 ];
 
@@ -70,15 +43,17 @@ export const Skills = () => {
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center gap-3 mb-6">
                   {skillSet.icon}
                   <h3 className="text-xl font-semibold text-accent">{skillSet.category}</h3>
                 </div>
-                <div className="space-y-3">
+                <div className="grid grid-cols-3 gap-4">
                   {skillSet.items.map((skill) => (
-                    <div key={skill.name} className="flex items-center justify-between">
-                      <span className="text-gray-700">{skill.name}</span>
-                      <span className="text-sm text-accent">{skill.level}</span>
+                    <div
+                      key={skill}
+                      className="flex items-center justify-center p-3 bg-gray-50 rounded-lg hover:bg-accent/10 transition-colors"
+                    >
+                      <span className="text-sm text-gray-700">{skill}</span>
                     </div>
                   ))}
                 </div>
