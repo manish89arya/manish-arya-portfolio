@@ -5,7 +5,7 @@ const experiences = [
   {
     title: "SDET-III",
     company: "Airtel Payments Bank",
-    logo: "/lovable-uploads/airtel-logo.png", // You'll need to upload this
+    logo: "/lovable-uploads/c5f83569-7e8d-48df-a1b8-0b695c16179d.png",
     location: "Bhopal, Madhya Pradesh",
     period: "03/2023 - Present",
     description: "Leading mobile and API automation initiatives while mentoring junior QA team members."
@@ -13,7 +13,7 @@ const experiences = [
   {
     title: "Sr. QA Engineer",
     company: "Renegade Insurance",
-    logo: "/lovable-uploads/renegade-logo.png", // You'll need to upload this
+    logo: "/lovable-uploads/0c869001-056a-4f19-8f80-a91373c9d6f4.png",
     location: "Bhopal, Madhya Pradesh",
     period: "12/2020 - 03/2023",
     description: "Led framework evaluation and implementation while serving as Acting Lead for the QA team."
@@ -21,7 +21,7 @@ const experiences = [
   {
     title: "Test Engineer",
     company: "Madhya Pradesh Agency For Promotion Of Information Technology",
-    logo: "/lovable-uploads/mapit-logo.png", // You'll need to upload this
+    logo: "/lovable-uploads/310e2bb8-1860-4495-8fa7-ade1897c16a8.png",
     location: "Bhopal, Madhya Pradesh",
     period: "08/2020 - 11/2020",
     description: "Developed test strategies and frameworks for government management portals."
@@ -29,7 +29,7 @@ const experiences = [
   {
     title: "Team Lead in Test",
     company: "PayU Payments Pvt Ltd",
-    logo: "/lovable-uploads/payu-logo.png", // You'll need to upload this
+    logo: "/lovable-uploads/2588a4fa-eacc-458c-a01e-593970b36099.png",
     location: "Gurugram, Haryana",
     period: "10/2015 - 07/2020",
     description: "Led QA team and managed end-to-end testing processes for payment processing applications."
@@ -37,7 +37,7 @@ const experiences = [
   {
     title: "Business Management Analyst",
     company: "Systango Infosoft Pvt Ltd",
-    logo: "/lovable-uploads/systango-logo.png", // You'll need to upload this
+    logo: "/lovable-uploads/fb029538-3b9b-473c-8f88-97edc116aa47.png",
     location: "Indore, Madhya Pradesh",
     period: "01/2014 - 10/2015",
     description: "Managed requirements documentation and testing for social media platform development."
