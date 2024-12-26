@@ -29,7 +29,7 @@ const experiences = [
   {
     title: "Team Lead in Test",
     company: "PayU Payments Pvt Ltd",
-    logo: "/lovable-uploads/2588a4fa-eacc-458c-a01e-593970b36099.png",
+    logo: "/lovable-uploads/a69d5d4c-eb3e-4199-a949-dc3db1dc656c.png",
     location: "Gurugram, Haryana",
     period: "10/2015 - 07/2020",
     description: "Led QA team and managed end-to-end testing processes for payment processing applications."
