@@ -41,9 +41,11 @@ export const Hero = () => {
             <span className="text-accent"> Test Automation Excellence</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Software QA professional with 9+ years of experience, specializing in Web, API, and Mobile automation. 
-            Strong domain knowledge in ecommerce, fintech, and insurance sectors, with a proven track record of 
-            driving continuous improvement across cross-functional teams.
+            Software QA professional with 9+ years of relevant experience, specializing in 4 years of Web, API, and Mobile
+            automation. Self-driven leader focused on product quality through questioning and experiential learning. Proven track
+            record of driving continuous improvement across cross-functional teams. Strong domain knowledge in ecommerce,
+            fintech, and insurance, enabling effective testing and quality assurance strategies tailored to industry-spec
+            requirements.
           </p>
           <motion.div
             initial={{ opacity: 0 }}

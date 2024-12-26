@@ -14,6 +14,10 @@ const projects = [
     ],
     tech: ["Appium", "Java", "Karate", "ARCOS"],
     icon: <Smartphone className="w-6 h-6 text-accent" />,
+    links: [
+      { text: "Mitra App", url: "https://play.google.com/store/apps/details?id=com.airtel.agilelabs.retailerapp&hl=en_IN" },
+      { text: "Airtel Merchant App", url: "https://play.google.com/store/apps/details?id=com.apbl.merchant&hl=en_IN" }
+    ]
   },
   {
     title: "Renegade CRM & Quoting",
@@ -26,6 +30,9 @@ const projects = [
     ],
     tech: ["Selenium", "Azure Pipelines", "Karate", "JMeter"],
     icon: <Globe className="w-6 h-6 text-accent" />,
+    links: [
+      { text: "renegadeinsurance", url: "https://renegadeinsurance.com/" }
+    ]
   },
   {
     title: "HRMS & Society Management Portal",
@@ -35,7 +42,7 @@ const projects = [
       "Built scalable API testing framework cutting regression time by 70%"
     ],
     tech: ["Postman", "Azure DevOps", "TestNG"],
-    icon: <Server className="w-6 h-6 text-accent" />,
+    icon: <Server className="w-6 h-6 text-accent" />
   },
   {
     title: "PayU App & SDK",
@@ -48,6 +55,10 @@ const projects = [
     ],
     tech: ["Appium", "Selenium", "JMeter", "Cucumber"],
     icon: <Smartphone className="w-6 h-6 text-accent" />,
+    links: [
+      { text: "PayU App", url: "https://play.google.com/store/apps/details?id=payumoney.merchantapp&hl=en_IN" },
+      { text: "Android Checkout Pro SDK", url: "https://docs.payu.in/docs/android-checkoutpro-sdk" }
+    ]
   },
   {
     title: "Feelshare",
@@ -59,7 +70,7 @@ const projects = [
       "Conducted cross-platform testing validation"
     ],
     tech: ["Gherkin", "BDD", "Mobile Testing"],
-    icon: <Database className="w-6 h-6 text-accent" />,
+    icon: <Database className="w-6 h-6 text-accent" />
   }
 ];
 
@@ -99,6 +110,21 @@ export const Projects = () => {
                         <li key={i} className="leading-relaxed">{achievement}</li>
                       ))}
                     </ul>
+                    {project.links && (
+                      <div className="mb-4">
+                        {project.links.map((link, i) => (
+                          <a
+                            key={i}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block text-accent hover:underline mb-1"
+                          >
+                            {link.text}
+                          </a>
+                        ))}
+                      </div>
+                    )}
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech) => (
                         <span
