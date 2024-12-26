@@ -37,7 +37,7 @@ const experiences = [
   {
     title: "Business Management Analyst",
     company: "Systango Infosoft Pvt Ltd",
-    logo: "/lovable-uploads/fb029538-3b9b-473c-8f88-97edc116aa47.png",
+    logo: "/lovable-uploads/2588a4fa-eacc-458c-a01e-593970b36099.png",
     location: "Indore, Madhya Pradesh",
     period: "01/2014 - 10/2015",
     description: "Managed requirements documentation and testing for social media platform development."
