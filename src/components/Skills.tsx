@@ -18,8 +18,8 @@ const skills = [
     category: "Test Automation",
     icon: <TestTube className="w-6 h-6 text-accent" />,
     items: [
-      { name: "Selenium", icon: "https://www.vectorlogo.zone/logos/seleniumhq/seleniumhq-icon.svg" },
-      { name: "Appium", icon: "https://www.vectorlogo.zone/logos/appiumio/appiumio-icon.svg" },
+      { name: "Selenium", icon: "https://www.selenium.dev/images/selenium_logo_square_green.png" },
+      { name: "Appium", icon: "https://appium.io/docs/en/latest/assets/images/appium-logo-horiz.png" },
       { name: "TestNG", icon: "https://avatars.githubusercontent.com/u/12528662" },
       { name: "Rest Assured", icon: "https://rest-assured.io/img/logo-transparent.png" },
       { name: "Cucumber", icon: "https://www.vectorlogo.zone/logos/cucumberio/cucumberio-icon.svg" },
