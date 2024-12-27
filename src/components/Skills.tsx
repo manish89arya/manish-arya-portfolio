@@ -19,7 +19,7 @@ const skills = [
     icon: <TestTube className="w-6 h-6 text-accent" />,
     items: [
       { name: "Selenium", icon: "https://www.selenium.dev/images/selenium_logo_square_green.png" },
-      { name: "Appium", icon: "https://appium.io/docs/en/latest/assets/images/appium-logo-horiz.png" },
+      { name: "Appium", icon: "/lovable-uploads/8878cdb9-43f0-44ac-8a25-fea1bee8bb6e.png" },
       { name: "TestNG", icon: "https://avatars.githubusercontent.com/u/12528662" },
       { name: "Rest Assured", icon: "https://rest-assured.io/img/logo-transparent.png" },
       { name: "Cucumber", icon: "https://www.vectorlogo.zone/logos/cucumberio/cucumberio-icon.svg" },
