@@ -13,7 +13,7 @@ export const Contact = () => {
         >
           <h2 className="text-3xl font-bold mb-8">Let's Connect</h2>
           <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-            Looking to enhance your team's quality assurance practices? Let's discuss how my expertise in test automation and DevOps can contribute to your success.
+            Looking to enhance your team's quality assurance practices? Let's discuss how my expertise in test automation can contribute to your success.
           </p>
           <div className="flex justify-center space-x-6">
             <motion.a

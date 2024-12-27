@@ -1,26 +1,56 @@
 import { motion } from "framer-motion";
-import { Code, Database, GitBranch, Laptop, Terminal, TestTube, Bug, Wrench, Server, Blocks } from "lucide-react";
+import { Code, Database, GitBranch, Laptop, Terminal, TestTube } from "lucide-react";
 
 const skills = [
   {
     category: "Programming",
     icon: <Code className="w-6 h-6 text-accent" />,
-    items: ["Java", "Karate DSL", "Gherkin", "JavaScript", "Python", "Bash"],
+    items: [
+      { name: "Java", icon: "/lovable-uploads/java-icon.png" },
+      { name: "Karate DSL", icon: "/lovable-uploads/karate-icon.png" },
+      { name: "Gherkin", icon: "/lovable-uploads/cucumber-icon.png" },
+      { name: "JavaScript", icon: "/lovable-uploads/js-icon.png" },
+      { name: "Python", icon: "/lovable-uploads/python-icon.png" },
+      { name: "Bash", icon: "/lovable-uploads/bash-icon.png" },
+    ],
   },
   {
     category: "Test Automation",
     icon: <TestTube className="w-6 h-6 text-accent" />,
-    items: ["Selenium", "Appium", "TestNG", "Rest Assured", "Cucumber", "Postman", "JMeter", "GraphQL"],
+    items: [
+      { name: "Selenium", icon: "/lovable-uploads/selenium-icon.png" },
+      { name: "Appium", icon: "/lovable-uploads/appium-icon.png" },
+      { name: "TestNG", icon: "/lovable-uploads/testng-icon.png" },
+      { name: "Rest Assured", icon: "/lovable-uploads/rest-assured-icon.png" },
+      { name: "Cucumber", icon: "/lovable-uploads/cucumber-icon.png" },
+      { name: "Postman", icon: "/lovable-uploads/postman-icon.png" },
+      { name: "JMeter", icon: "/lovable-uploads/jmeter-icon.png" },
+      { name: "GraphQL", icon: "/lovable-uploads/graphql-icon.png" },
+    ],
   },
   {
-    category: "DevOps & Infrastructure",
+    category: "Version Control & Infrastructure",
     icon: <GitBranch className="w-6 h-6 text-accent" />,
-    items: ["Git", "Jenkins", "Azure Pipelines", "Docker", "MySQL", "MongoDB"],
+    items: [
+      { name: "Git", icon: "/lovable-uploads/git-icon.png" },
+      { name: "Jenkins", icon: "/lovable-uploads/jenkins-icon.png" },
+      { name: "Azure Pipelines", icon: "/lovable-uploads/azure-icon.png" },
+      { name: "Docker", icon: "/lovable-uploads/docker-icon.png" },
+      { name: "MySQL", icon: "/lovable-uploads/mysql-icon.png" },
+      { name: "MongoDB", icon: "/lovable-uploads/mongodb-icon.png" },
+    ],
   },
   {
     category: "Tools & IDEs",
     icon: <Laptop className="w-6 h-6 text-accent" />,
-    items: ["IntelliJ", "VSCode", "Eclipse", "Android Studio", "Xcode", "Datadog"],
+    items: [
+      { name: "IntelliJ", icon: "/lovable-uploads/intellij-icon.png" },
+      { name: "VSCode", icon: "/lovable-uploads/vscode-icon.png" },
+      { name: "Eclipse", icon: "/lovable-uploads/eclipse-icon.png" },
+      { name: "Android Studio", icon: "/lovable-uploads/android-studio-icon.png" },
+      { name: "Xcode", icon: "/lovable-uploads/xcode-icon.png" },
+      { name: "Datadog", icon: "/lovable-uploads/datadog-icon.png" },
+    ],
   },
 ];
 
@@ -50,10 +80,15 @@ export const Skills = () => {
                 <div className="grid grid-cols-3 gap-4">
                   {skillSet.items.map((skill) => (
                     <div
-                      key={skill}
-                      className="flex items-center justify-center p-3 bg-gray-50 rounded-lg hover:bg-accent/10 transition-colors"
+                      key={skill.name}
+                      className="flex flex-col items-center justify-center p-3 bg-gray-50 rounded-lg hover:bg-accent/10 transition-colors gap-2"
                     >
-                      <span className="text-sm text-gray-700">{skill}</span>
+                      <img 
+                        src={skill.icon} 
+                        alt={`${skill.name} icon`} 
+                        className="w-6 h-6 object-contain"
+                      />
+                      <span className="text-sm text-gray-700 text-center">{skill.name}</span>
                     </div>
                   ))}
                 </div>

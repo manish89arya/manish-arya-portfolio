@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Trophy } from "lucide-react";
+import { Trophy, X } from "lucide-react";
+import { useState } from "react";
 
 const awards = [
   {
@@ -38,6 +39,8 @@ const awards = [
 ];
 
 export const Awards = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
@@ -73,7 +76,8 @@ export const Awards = () => {
                         {award.image.map((img, i) => (
                           <div 
                             key={i}
-                            className="border-2 border-gray-200 rounded-lg p-2 hover:border-accent transition-colors duration-300 aspect-[4/3] overflow-hidden"
+                            onClick={() => setSelectedImage(img)}
+                            className="border-2 border-gray-200 rounded-lg p-2 hover:border-accent transition-colors duration-300 aspect-[4/3] overflow-hidden cursor-pointer"
                           >
                             <img
                               src={img}
@@ -84,7 +88,10 @@ export const Awards = () => {
                         ))}
                       </div>
                     ) : (
-                      <div className="border-2 border-gray-200 rounded-lg p-2 hover:border-accent transition-colors duration-300 aspect-[4/3] overflow-hidden">
+                      <div 
+                        onClick={() => setSelectedImage(award.image as string)}
+                        className="border-2 border-gray-200 rounded-lg p-2 hover:border-accent transition-colors duration-300 aspect-[4/3] overflow-hidden cursor-pointer"
+                      >
                         <img
                           src={award.image}
                           alt={`${award.name} certificate`}
@@ -99,6 +106,28 @@ export const Awards = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Modal for enlarged image */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-4xl w-full">
+            <button 
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-12 right-0 text-white hover:text-accent"
+            >
+              <X className="w-8 h-8" />
+            </button>
+            <img 
+              src={selectedImage} 
+              alt="Enlarged certificate" 
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 };
