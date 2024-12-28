@@ -1,13 +1,28 @@
 import { motion } from "framer-motion";
-import { Code, Database, GitBranch, Laptop, Terminal, TestTube } from "lucide-react";
+import { Code, Database, GitBranch, Laptop, Terminal, TestTube, CheckCircle2, Users } from "lucide-react";
 
 const skills = [
+  {
+    category: "Core Testing Skills & Methodologies",
+    icon: <TestTube className="w-6 h-6 text-accent" />,
+    items: [
+      { name: "Manual Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Functional Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Web Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "API Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Mobile Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Integration Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "System Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "UAT", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Test Planning", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+    ],
+  },
   {
     category: "Programming",
     icon: <Code className="w-6 h-6 text-accent" />,
     items: [
       { name: "Java", icon: "https://www.vectorlogo.zone/logos/java/java-icon.svg" },
-      { name: "Karate DSL", icon: "https://karatelabs.github.io/karate/karate-core/favicon.png" },
+      { name: "Karate DSL", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
       { name: "Gherkin", icon: "https://www.vectorlogo.zone/logos/cucumberio/cucumberio-icon.svg" },
       { name: "JavaScript", icon: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
       { name: "Python", icon: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
@@ -50,6 +65,18 @@ const skills = [
       { name: "Android Studio", icon: "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png" },
       { name: "Xcode", icon: "https://developer.apple.com/assets/elements/icons/xcode-12/xcode-12-96x96_2x.png" },
       { name: "Datadog", icon: "https://www.vectorlogo.zone/logos/datadoghq/datadoghq-icon.svg" },
+    ],
+  },
+  {
+    category: "Soft Skills",
+    icon: <Users className="w-6 h-6 text-accent" />,
+    items: [
+      { name: "Communication", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Collaboration", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Problem Solving", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Critical Thinking", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Detail Oriented", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Agile/Scrum", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
     ],
   },
 ];
