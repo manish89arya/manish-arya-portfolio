@@ -3,18 +3,18 @@ import { Code, Database, GitBranch, Laptop, Terminal, TestTube, CheckCircle2, Us
 
 const skills = [
   {
-    category: "Core Testing Skills & Methodologies",
+    category: "Testing Skills",
     icon: <TestTube className="w-6 h-6 text-accent" />,
     items: [
-      { name: "Manual Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Functional Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Web Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "API Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Mobile Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Integration Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "System Testing", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "UAT", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Test Planning", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Manual Testing", icon: <CheckCircle2 className="w-6 h-6" /> },
+      { name: "Functional Testing", icon: <CheckCircle2 className="w-6 h-6" /> },
+      { name: "Web Testing", icon: <CheckCircle2 className="w-6 h-6" /> },
+      { name: "API Testing", icon: <CheckCircle2 className="w-6 h-6" /> },
+      { name: "Mobile Testing", icon: <CheckCircle2 className="w-6 h-6" /> },
+      { name: "Integration Testing", icon: <CheckCircle2 className="w-6 h-6" /> },
+      { name: "System Testing", icon: <CheckCircle2 className="w-6 h-6" /> },
+      { name: "UAT", icon: <CheckCircle2 className="w-6 h-6" /> },
+      { name: "Test Planning", icon: <CheckCircle2 className="w-6 h-6" /> },
     ],
   },
   {
@@ -71,12 +71,12 @@ const skills = [
     category: "Soft Skills",
     icon: <Users className="w-6 h-6 text-accent" />,
     items: [
-      { name: "Communication", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Collaboration", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Problem Solving", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Critical Thinking", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Detail Oriented", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
-      { name: "Agile/Scrum", icon: "/lovable-uploads/5106dbc4-03a3-49cd-a22e-8b8b5eef0a43.png" },
+      { name: "Communication", icon: <Users className="w-6 h-6" /> },
+      { name: "Collaboration", icon: <Users className="w-6 h-6" /> },
+      { name: "Problem Solving", icon: <Users className="w-6 h-6" /> },
+      { name: "Critical Thinking", icon: <Users className="w-6 h-6" /> },
+      { name: "Detail Oriented", icon: <Users className="w-6 h-6" /> },
+      { name: "Agile/Scrum", icon: <Users className="w-6 h-6" /> },
     ],
   },
 ];
