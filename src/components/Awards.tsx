@@ -112,8 +112,8 @@ export const Awards = () => {
                   </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious className="h-16 w-16 -left-16" />
-                <CarouselNext className="h-16 w-16 -right-16" />
+                <CarouselPrevious />
+                <CarouselNext />
               </Carousel>
             </div>
           </div>
