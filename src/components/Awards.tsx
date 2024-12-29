@@ -53,10 +53,23 @@ const awards = [
 export const Awards = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
+  // Create autoplay plugin with 2 second delay
+  const autoplayPlugin = Autoplay({
+    delay: 2000,
+    stopOnInteraction: false,
+    stopOnMouseEnter: false,
+    stopOnFocusIn: false
+  });
+  
   // Initialize carousel with autoplay plugin
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 3000, stopOnInteraction: false })
-  ]);
+  const [emblaRef] = useEmblaCarousel(
+    { 
+      loop: true,
+      align: "start",
+      skipSnaps: false
+    }, 
+    [autoplayPlugin]
+  );
 
   return (
     <section className="py-20 px-4 bg-gray-50">
@@ -71,16 +84,16 @@ export const Awards = () => {
           
           {/* Carousel */}
           <div className="relative px-12">
-            <Carousel
-              ref={emblaRef}
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent>
-                {awards.map((award, index) => (
+            <div ref={emblaRef} className="overflow-hidden">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent>
+                  {awards.map((award, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
@@ -109,16 +122,16 @@ export const Awards = () => {
                       </div>
                     </motion.div>
                   </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
           </div>
         </motion.div>
       </div>
 
-      {/* Modal for enlarged image */}
       {selectedImage && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
