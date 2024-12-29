@@ -8,6 +8,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import useEmblaCarousel from "embla-carousel-react";
 
 const awards = [
   {
@@ -50,6 +52,11 @@ const awards = [
 
 export const Awards = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  
+  // Initialize carousel with autoplay plugin
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 3000, stopOnInteraction: false })
+  ]);
 
   return (
     <section className="py-20 px-4 bg-gray-50">
@@ -65,6 +72,7 @@ export const Awards = () => {
           {/* Carousel */}
           <div className="relative px-12">
             <Carousel
+              ref={emblaRef}
               opts={{
                 align: "start",
                 loop: true,
