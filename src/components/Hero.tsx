@@ -23,13 +23,13 @@ export const Hero = () => {
           </div>
           
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="tel:+919893070471" className="flex items-center gap-2 text-gray-600 hover:text-accent">
+            <a href="tel:+919165509175" className="flex items-center gap-2 text-gray-600 hover:text-accent">
               <Phone className="w-4 h-4" />
-              <span>+91 989 307 0471</span>
+              <span>+91 916 550 9175</span>
             </a>
-            <a href="mailto:manish89arya@gmail.com" className="flex items-center gap-2 text-gray-600 hover:text-accent">
+            <a href="mailto:manish1089arya@gmail.com" className="flex items-center gap-2 text-gray-600 hover:text-accent">
               <Mail className="w-4 h-4" />
-              <span>manish89arya@gmail.com</span>
+              <span>manish1089arya@gmail.com</span>
             </a>
           </div>
 
@@ -40,7 +40,7 @@ export const Hero = () => {
             Driving Quality Through
             <span className="text-accent"> Test Automation Excellence</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto text-left">
             Software QA professional with 9+ years of relevant experience, specializing in 4 years of Web, API, and Mobile
             automation. Self-driven leader focused on product quality through questioning and experiential learning. Proven track
             record of driving continuous improvement across cross-functional teams. Strong domain knowledge in ecommerce,
