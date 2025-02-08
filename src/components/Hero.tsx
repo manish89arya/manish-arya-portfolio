@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Mail, Phone, Github, Linkedin, FileText } from "lucide-react";
 
@@ -23,9 +24,9 @@ export const Hero = () => {
           </div>
           
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="tel:+919165509175" className="flex items-center gap-2 text-gray-600 hover:text-accent">
+            <a href="tel:+919893070471" className="flex items-center gap-2 text-gray-600 hover:text-accent">
               <Phone className="w-4 h-4" />
-              <span>+91 916 550 9175</span>
+              <span>+91 989 307 0471</span>
             </a>
             <a href="mailto:manish1089arya@gmail.com" className="flex items-center gap-2 text-gray-600 hover:text-accent">
               <Mail className="w-4 h-4" />
