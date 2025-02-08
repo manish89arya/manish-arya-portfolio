@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Calendar, Building2, MapPin } from "lucide-react";
 import { ExperienceTable } from "./ExperienceTable";
@@ -56,7 +55,10 @@ export const Experience = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold text-center mb-12">Professional Experience</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Professional Experience</h2>
+          
+          <ExperienceTable />
+          
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <motion.div
@@ -97,15 +99,6 @@ export const Experience = () => {
               </motion.div>
             ))}
           </div>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <ExperienceTable />
-          </motion.div>
         </motion.div>
       </div>
     </section>

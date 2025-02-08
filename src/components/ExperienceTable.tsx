@@ -3,7 +3,7 @@ import { Table, TableBody, TableCell, TableHeader, TableHead, TableRow } from ".
 
 export const ExperienceTable = () => {
   return (
-    <div className="mt-12 overflow-x-auto">
+    <div className="mb-8 overflow-x-auto">
       <Table className="w-full border border-gray-100">
         <TableHeader className="bg-accent/5">
           <TableRow>
@@ -52,12 +52,16 @@ export const ExperienceTable = () => {
           </TableRow>
           <TableRow className="font-medium bg-accent/5">
             <TableCell>Total Experience</TableCell>
-            <TableCell colSpan={3} className="text-center">3931</TableCell>
+            <TableCell>-</TableCell>
+            <TableCell>-</TableCell>
+            <TableCell>3931</TableCell>
             <TableCell>10 years 9 months 11 days</TableCell>
           </TableRow>
           <TableRow className="font-medium">
             <TableCell>Relevant Experience in Testing</TableCell>
-            <TableCell colSpan={3} className="text-center">3422</TableCell>
+            <TableCell>-</TableCell>
+            <TableCell>-</TableCell>
+            <TableCell>3422</TableCell>
             <TableCell className="text-accent">9 years 4 months 17 days</TableCell>
           </TableRow>
         </TableBody>
