@@ -15,26 +15,26 @@ export const ExperienceTable = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          <TableRow>
-            <TableCell>Systango Infosoft</TableCell>
-            <TableCell>06 Jun 2014</TableCell>
-            <TableCell>26 Oct 2015</TableCell>
-            <TableCell>507</TableCell>
-            <TableCell>1 years 4 months 22 days</TableCell>
+          <TableRow className="font-medium">
+            <TableCell>Relevant Experience in Testing</TableCell>
+            <TableCell>-</TableCell>
+            <TableCell>-</TableCell>
+            <TableCell>3422</TableCell>
+            <TableCell className="text-accent">9 years 4 months 17 days</TableCell>
+          </TableRow>
+          <TableRow className="font-medium bg-accent/5">
+            <TableCell>Total Experience</TableCell>
+            <TableCell>-</TableCell>
+            <TableCell>-</TableCell>
+            <TableCell>3931</TableCell>
+            <TableCell>10 years 9 months 11 days</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>PayU Payments</TableCell>
-            <TableCell>28 Oct 2015</TableCell>
-            <TableCell>31 Jul 2020</TableCell>
-            <TableCell>1738</TableCell>
-            <TableCell>4 years 9 months 8 days</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>MAPIT</TableCell>
-            <TableCell>10 Aug 2020</TableCell>
-            <TableCell>20 Nov 2020</TableCell>
-            <TableCell>102</TableCell>
-            <TableCell>0 years 3 months 12 days</TableCell>
+            <TableCell>Airtel Payments Bank</TableCell>
+            <TableCell>28 Mar 2023</TableCell>
+            <TableCell>11 Mar 2025</TableCell>
+            <TableCell>714</TableCell>
+            <TableCell>1 years 11 months 19 days</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Renegade Insurance</TableCell>
@@ -44,25 +44,25 @@ export const ExperienceTable = () => {
             <TableCell>2 years 3 months 6 days</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Airtel Payments Bank</TableCell>
-            <TableCell>28 Mar 2023</TableCell>
-            <TableCell>11 Mar 2025</TableCell>
-            <TableCell>714</TableCell>
-            <TableCell>1 years 11 months 19 days</TableCell>
+            <TableCell>MAPIT</TableCell>
+            <TableCell>10 Aug 2020</TableCell>
+            <TableCell>20 Nov 2020</TableCell>
+            <TableCell>102</TableCell>
+            <TableCell>0 years 3 months 12 days</TableCell>
           </TableRow>
-          <TableRow className="font-medium bg-accent/5">
-            <TableCell>Total Experience</TableCell>
-            <TableCell>-</TableCell>
-            <TableCell>-</TableCell>
-            <TableCell>3931</TableCell>
-            <TableCell>10 years 9 months 11 days</TableCell>
+          <TableRow>
+            <TableCell>PayU Payments</TableCell>
+            <TableCell>28 Oct 2015</TableCell>
+            <TableCell>31 Jul 2020</TableCell>
+            <TableCell>1738</TableCell>
+            <TableCell>4 years 9 months 8 days</TableCell>
           </TableRow>
-          <TableRow className="font-medium">
-            <TableCell>Relevant Experience in Testing</TableCell>
-            <TableCell>-</TableCell>
-            <TableCell>-</TableCell>
-            <TableCell>3422</TableCell>
-            <TableCell className="text-accent">9 years 4 months 17 days</TableCell>
+          <TableRow>
+            <TableCell>Systango Infosoft</TableCell>
+            <TableCell>06 Jun 2014</TableCell>
+            <TableCell>26 Oct 2015</TableCell>
+            <TableCell>507</TableCell>
+            <TableCell>1 years 4 months 22 days</TableCell>
           </TableRow>
         </TableBody>
       </Table>
