@@ -37,32 +37,32 @@ export const ExperienceTable = () => {
             <TableCell>0 years 3 months 12 days</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>PayU Payments</TableCell>
+            <TableCell>PayU Payments Pvt Ltd</TableCell>
             <TableCell>28 Oct 2015</TableCell>
             <TableCell>31 Jul 2020</TableCell>
             <TableCell>1738</TableCell>
             <TableCell>4 years 9 months 8 days</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Systango Infosoft</TableCell>
-            <TableCell>06 Jun 2014</TableCell>
+            <TableCell>Systango Infosoft Pvt Ltd</TableCell>
+            <TableCell>06 Jan 2014</TableCell>
             <TableCell>26 Oct 2015</TableCell>
-            <TableCell>507</TableCell>
-            <TableCell>1 years 4 months 22 days</TableCell>
+            <TableCell>659</TableCell>
+            <TableCell>1 years 9 months 20 days</TableCell>
           </TableRow>
           <TableRow className="font-medium bg-accent/5">
             <TableCell>Total Experience</TableCell>
             <TableCell>-</TableCell>
             <TableCell>-</TableCell>
-            <TableCell>3931</TableCell>
-            <TableCell>10 years 9 months 11 days</TableCell>
+            <TableCell>4039</TableCell>
+            <TableCell>11 years 1 months 5 days</TableCell>
           </TableRow>
           <TableRow className="font-medium">
             <TableCell>Relevant Experience in Testing</TableCell>
             <TableCell>-</TableCell>
             <TableCell>-</TableCell>
-            <TableCell>3422</TableCell>
-            <TableCell className="text-accent">9 years 4 months 17 days</TableCell>
+            <TableCell>3380</TableCell>
+            <TableCell className="text-accent">9 years 3 months 15 days</TableCell>
           </TableRow>
         </TableBody>
       </Table>

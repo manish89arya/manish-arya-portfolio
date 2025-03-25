@@ -16,6 +16,7 @@ const awards = [
   {
     name: "PayU Global \"Thank You\" Award",
     description: "Recognized for outstanding contribution to the successful release of the PayU app, ensuring high-quality on time delivery.",
+    date: "15 Apr 2019",
     year: "2019",
     company: "PayU Payments",
     image: "/lovable-uploads/c827403d-d3b2-49e2-bced-323bc1cb4d36.png"
@@ -23,6 +24,7 @@ const awards = [
   {
     name: "PayU U ROCK Performance Appreciation",
     description: "Recognized for great attitude, exceptional work & dedication.",
+    date: "23 Aug 2018",
     year: "2018",
     company: "PayU Payments",
     image: "/lovable-uploads/7ab1e67b-dd50-434b-a6e3-3a38af471d6b.png"
@@ -30,6 +32,7 @@ const awards = [
   {
     name: "PayU U ROCK Performance Appreciation",
     description: "Recognized for great attitude, exceptional work & dedication.",
+    date: "07 Mar 2018",
     year: "2018",
     company: "PayU Payments",
     image: "/lovable-uploads/7ecd3831-7c0f-4f31-967f-d87734ae539d.png"
@@ -37,6 +40,7 @@ const awards = [
   {
     name: "PayU Letter of Recognition",
     description: "Awarded for demonstrating ownership and collaboration while launching mobile app and enabling PayU to reach next million merchants.",
+    date: "21 Feb 2020",
     year: "2020",
     company: "PayU Payments",
     image: "/lovable-uploads/163b4490-ec0a-4877-81d4-f4588316f896.png"
@@ -44,6 +48,7 @@ const awards = [
   {
     name: "Airtel Execution Excellence Award",
     description: "Recognized for outstanding execution and delivery of key projects with excellence and precision.",
+    date: "18 Jan 2024",
     year: "2024",
     company: "Airtel Payments Bank",
     image: "/lovable-uploads/7e2a6331-8fe7-4ce7-9239-c5c79c581f4a.png"
@@ -51,6 +56,7 @@ const awards = [
   {
     name: "Airtel Learning Agility Award",
     description: "Awarded for demonstrating exceptional learning capabilities and adaptability in implementing new technologies and methodologies.",
+    date: "05 Nov 2023",
     year: "2023",
     company: "Airtel Payments Bank",
     image: "/lovable-uploads/344e6382-8f35-42ed-87a1-1b229bcb6870.png"
@@ -60,8 +66,12 @@ const awards = [
 export const Awards = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
-  // Sort awards by year in descending order
-  const sortedAwards = [...awards].sort((a, b) => parseInt(b.year) - parseInt(a.year));
+  // Sort awards by date in descending order
+  const sortedAwards = [...awards].sort((a, b) => {
+    const dateA = new Date(a.date.split(' ').reverse().join(' '));
+    const dateB = new Date(b.date.split(' ').reverse().join(' '));
+    return dateB.getTime() - dateA.getTime();
+  });
 
   return (
     <section className="py-20 px-4 bg-gray-50">
@@ -79,7 +89,7 @@ export const Awards = () => {
               <Table className="w-full">
                 <TableHeader className="bg-accent/10">
                   <TableRow>
-                    <TableHead className="text-center font-semibold">Year</TableHead>
+                    <TableHead className="text-center font-semibold">Date</TableHead>
                     <TableHead className="text-center font-semibold">Company</TableHead>
                     <TableHead className="text-center font-semibold">Appreciated with</TableHead>
                   </TableRow>
@@ -90,7 +100,7 @@ export const Awards = () => {
                       key={index}
                       className="hover:bg-accent/5 transition-colors duration-200"
                     >
-                      <TableCell className="text-center font-medium">{award.year}</TableCell>
+                      <TableCell className="text-center font-medium">{award.date}</TableCell>
                       <TableCell className="text-center">{award.company}</TableCell>
                       <TableCell className="text-center">
                         <button
