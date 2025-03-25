@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
-import { Award, ExternalLink } from "lucide-react";
-import { useState } from "react";
+import { Award, ExternalLink, X } from "lucide-react";
+import { useState, useEffect } from "react";
 import {
   Table,
   TableBody,
@@ -74,6 +74,23 @@ const awards = [
 export const Awards = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
+  // Close modal when escape key is pressed
+  useEffect(() => {
+    const handleEscKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSelectedImage(null);
+      }
+    };
+
+    if (selectedImage) {
+      document.addEventListener("keydown", handleEscKey);
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+    };
+  }, [selectedImage]);
+
   // Sort awards by date in descending order
   const sortedAwards = [...awards].sort((a, b) => {
     const dateA = new Date(a.date.split(' ').reverse().join(' '));
@@ -132,21 +149,27 @@ export const Awards = () => {
 
       {selectedImage && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-8 overflow-auto"
           onClick={() => setSelectedImage(null)}
         >
-          <div className="relative max-w-4xl w-full">
+          <div 
+            className="relative max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-2"
+            onClick={(e) => e.stopPropagation()} // Prevent clicks on image from closing
+          >
             <button 
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-accent"
+              className="absolute -top-2 -right-2 bg-black text-white hover:bg-gray-700 p-1 rounded-full z-10"
+              aria-label="Close"
             >
-              <ExternalLink className="w-8 h-8" />
+              <X className="w-5 h-5" />
             </button>
-            <img 
-              src={selectedImage} 
-              alt="Enlarged certificate" 
-              className="w-full h-auto rounded-lg"
-            />
+            <div className="max-h-[80vh] overflow-auto">
+              <img 
+                src={selectedImage} 
+                alt="Award certificate" 
+                className="w-full h-auto max-h-[80vh] object-contain"
+              />
+            </div>
           </div>
         </div>
       )}
