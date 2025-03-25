@@ -14,6 +14,14 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const awards = [
   {
+    name: "Airtel Automation Excellence Award",
+    description: "Certificate of Achievement for Automation Excellence awarded by Khushboo Sandhu, Sr.EM - RnM Technology.",
+    date: "30 Jan 2025",
+    year: "2025",
+    company: "Airtel Payments Bank",
+    image: "/lovable-uploads/62f6665d-b640-4c5f-91c9-cfea04f1ae46.png"
+  },
+  {
     name: "PayU Global \"Thank You\" Award",
     description: "Recognized for outstanding contribution to the successful release of the PayU app, ensuring high-quality on time delivery.",
     date: "15 Apr 2019",
