@@ -22,6 +22,14 @@ const awards = [
     image: "/lovable-uploads/62f6665d-b640-4c5f-91c9-cfea04f1ae46.png"
   },
   {
+    name: "PayU ROCK Performance Appreciation",
+    description: "Recognized for great attitude, exceptional work & dedication.",
+    date: "28 Dec 2028",
+    year: "2028",
+    company: "PayU Payments",
+    image: "/lovable-uploads/7ab1e67b-dd50-434b-a6e3-3a38af471d6b.png"
+  },
+  {
     name: "Airtel Learning Agility Award",
     description: "Awarded for demonstrating exceptional learning capabilities and adaptability in implementing new technologies and methodologies.",
     date: "20 Jun 2023",
@@ -46,18 +54,10 @@ const awards = [
     image: "/lovable-uploads/c827403d-d3b2-49e2-bced-323bc1cb4d36.png"
   },
   {
-    name: "PayU U ROCK Performance Appreciation",
+    name: "PayU ROCK Performance Appreciation",
     description: "Recognized for great attitude, exceptional work & dedication.",
-    date: "20 Jun 2023",
-    year: "2023",
-    company: "PayU Payments",
-    image: "/lovable-uploads/7ab1e67b-dd50-434b-a6e3-3a38af471d6b.png"
-  },
-  {
-    name: "PayU U ROCK Performance Appreciation",
-    description: "Recognized for great attitude, exceptional work & dedication.",
-    date: "19 Jun 2020",
-    year: "2020",
+    date: "13 Nov 2018",
+    year: "2018",
     company: "PayU Payments",
     image: "/lovable-uploads/7ecd3831-7c0f-4f31-967f-d87734ae539d.png"
   },
