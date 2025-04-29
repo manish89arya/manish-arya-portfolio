@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Award, ExternalLink, X } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -20,6 +19,22 @@ const awards = [
     year: "2025",
     company: "Airtel Payments Bank",
     image: "/lovable-uploads/62f6665d-b640-4c5f-91c9-cfea04f1ae46.png"
+  },
+  {
+    name: "Airtel Learning Agility Award",
+    description: "Awarded for demonstrating exceptional learning capabilities and adaptability in implementing new technologies and methodologies.",
+    date: "20 Jun 2023",
+    year: "2023",
+    company: "Airtel Payments Bank",
+    image: "/lovable-uploads/344e6382-8f35-42ed-87a1-1b229bcb6870.png"
+  },
+  {
+    name: "Airtel Execution Excellence Award",
+    description: "Recognized for outstanding execution and delivery of key projects with excellence and precision.",
+    date: "19 Apr 2024",
+    year: "2024",
+    company: "Airtel Payments Bank",
+    image: "/lovable-uploads/7e2a6331-8fe7-4ce7-9239-c5c79c581f4a.png"
   },
   {
     name: "PayU Global \"Thank You\" Award",
@@ -52,22 +67,6 @@ const awards = [
     year: "2019",
     company: "PayU Payments",
     image: "/lovable-uploads/163b4490-ec0a-4877-81d4-f4588316f896.png"
-  },
-  {
-    name: "Airtel Execution Excellence Award",
-    description: "Recognized for outstanding execution and delivery of key projects with excellence and precision.",
-    date: "13 Nov 2018",
-    year: "2018",
-    company: "Airtel Payments Bank",
-    image: "/lovable-uploads/7e2a6331-8fe7-4ce7-9239-c5c79c581f4a.png"
-  },
-  {
-    name: "Airtel Learning Agility Award",
-    description: "Awarded for demonstrating exceptional learning capabilities and adaptability in implementing new technologies and methodologies.",
-    date: "27 Dec 2018",
-    year: "2018",
-    company: "Airtel Payments Bank",
-    image: "/lovable-uploads/344e6382-8f35-42ed-87a1-1b229bcb6870.png"
   }
 ];
 
