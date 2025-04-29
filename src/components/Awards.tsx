@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Award, ExternalLink, X } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -39,8 +40,8 @@ const awards = [
   {
     name: "PayU Global \"Thank You\" Award",
     description: "Recognized for outstanding contribution to the successful release of the PayU app, ensuring high-quality on time delivery.",
-    date: "19 Apr 2024",
-    year: "2024",
+    date: "19 Jun 2020",
+    year: "2020",
     company: "PayU Payments",
     image: "/lovable-uploads/c827403d-d3b2-49e2-bced-323bc1cb4d36.png"
   },
