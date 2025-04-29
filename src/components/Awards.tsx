@@ -24,8 +24,8 @@ const awards = [
   {
     name: "PayU ROCK Performance Appreciation",
     description: "Recognized for great attitude, exceptional work & dedication.",
-    date: "28 Dec 2028",
-    year: "2028",
+    date: "28 Dec 2018",
+    year: "2018",
     company: "PayU Payments",
     image: "/lovable-uploads/7ab1e67b-dd50-434b-a6e3-3a38af471d6b.png"
   },
