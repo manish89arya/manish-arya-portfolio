@@ -16,6 +16,13 @@ export const ExperienceTable = () => {
         </TableHeader>
         <TableBody>
           <TableRow>
+            <TableCell>Baazi Games</TableCell>
+            <TableCell>13 Mar 2025</TableCell>
+            <TableCell>Working</TableCell>
+            <TableCell>159</TableCell>
+            <TableCell>0 years 5 months 8 days</TableCell>
+          </TableRow>
+          <TableRow>
             <TableCell>Airtel Payments Bank</TableCell>
             <TableCell>28 Mar 2023</TableCell>
             <TableCell>11 Mar 2025</TableCell>
@@ -54,15 +61,15 @@ export const ExperienceTable = () => {
             <TableCell>Total Experience</TableCell>
             <TableCell>-</TableCell>
             <TableCell>-</TableCell>
-            <TableCell>4039</TableCell>
-            <TableCell>11 years 1 months 5 days</TableCell>
+            <TableCell>4198</TableCell>
+            <TableCell>11 years 6 months 13 days</TableCell>
           </TableRow>
           <TableRow className="font-medium">
             <TableCell>Relevant Experience in Testing</TableCell>
             <TableCell>-</TableCell>
             <TableCell>-</TableCell>
-            <TableCell>3380</TableCell>
-            <TableCell className="text-accent">9 years 3 months 15 days</TableCell>
+            <TableCell>3539</TableCell>
+            <TableCell className="text-accent">9 years 8 months 23 days</TableCell>
           </TableRow>
         </TableBody>
       </Table>

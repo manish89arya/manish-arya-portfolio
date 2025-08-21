@@ -15,7 +15,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const awards = [
   {
     name: "Airtel Automation Excellence Award",
-    description: "Certificate of Achievement for Automation Excellence awarded by Khushboo Sandhu, Sr.EM - RnM Technology.",
+    description: "Certificate of Achievement for Automation Excellence.",
     date: "30 Jan 2025",
     year: "2025",
     company: "Airtel Payments Bank",

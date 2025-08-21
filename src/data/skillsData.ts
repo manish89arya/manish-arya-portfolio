@@ -39,11 +39,19 @@ export const skillsData = [
       { name: "Cucumber", icon: "https://www.vectorlogo.zone/logos/cucumberio/cucumberio-icon.svg" },
       { name: "Postman", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
       { name: "JMeter", icon: "https://jmeter.apache.org/images/favicon.png" },
-      { name: "GraphQL", icon: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" },
     ],
   },
   {
-    category: "Version Control & Infrastructure",
+    category: "APIs worked with",
+    icon: Terminal,
+    items: [
+      { name: "GraphQL", icon: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" },
+      { name: "gRPC", icon: "https://www.vectorlogo.zone/logos/grpcio/grpcio-icon.svg" },
+      { name: "REST", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+    ],
+  },
+  {
+    category: "Version Control & Infra",
     icon: GitBranch,
     items: [
       { name: "Git", icon: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" },
