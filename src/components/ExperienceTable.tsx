@@ -19,15 +19,15 @@ export const ExperienceTable = () => {
             <TableCell>Baazi Games</TableCell>
             <TableCell>13 Mar 2025</TableCell>
             <TableCell>Working</TableCell>
-            <TableCell>159</TableCell>
-            <TableCell>0 years 5 months 8 days</TableCell>
+            <TableCell>164</TableCell>
+            <TableCell>0 years 5 months 11 days</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Airtel Payments Bank</TableCell>
             <TableCell>28 Mar 2023</TableCell>
             <TableCell>11 Mar 2025</TableCell>
-            <TableCell>714</TableCell>
-            <TableCell>1 years 11 months 19 days</TableCell>
+            <TableCell>713</TableCell>
+            <TableCell>1 years 11 months 11 days</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Renegade Insurance</TableCell>
@@ -61,15 +61,15 @@ export const ExperienceTable = () => {
             <TableCell>Total Experience</TableCell>
             <TableCell>-</TableCell>
             <TableCell>-</TableCell>
-            <TableCell>4198</TableCell>
-            <TableCell>11 years 6 months 13 days</TableCell>
+            <TableCell>4202</TableCell>
+            <TableCell>11 years 6 months 17 days</TableCell>
           </TableRow>
           <TableRow className="font-medium">
             <TableCell>Relevant Experience in Testing</TableCell>
             <TableCell>-</TableCell>
             <TableCell>-</TableCell>
-            <TableCell>3539</TableCell>
-            <TableCell className="text-accent">9 years 8 months 23 days</TableCell>
+            <TableCell>3543</TableCell>
+            <TableCell className="text-accent">9 years 8 months 27 days</TableCell>
           </TableRow>
         </TableBody>
       </Table>
