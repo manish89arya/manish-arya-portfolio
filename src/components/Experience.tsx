@@ -5,10 +5,18 @@ import { ExperienceTable } from "./ExperienceTable";
 const experiences = [
   {
     title: "SDET-III",
+    company: "Baazi Games",
+    logo: "/lovable-uploads/fb029538-3b9b-473c-8f88-97edc116aa47.png",
+    location: "Bhopal, Madhya Pradesh",
+    period: "03/2025 - Present",
+    description: "Building scalable API automation frameworks (REST, gRPC, GraphQL) to validate high-impact gaming scenarios, enhancing platform stability, performance, and test coverage."
+  },
+  {
+    title: "SDET-III",
     company: "Airtel Payments Bank",
     logo: "/lovable-uploads/c5f83569-7e8d-48df-a1b8-0b695c16179d.png",
     location: "Bhopal, Madhya Pradesh",
-    period: "03/2023 - Present",
+    period: "03/2023 - 03/2025",
     description: "Leading mobile and API automation initiatives while mentoring junior QA team members."
   },
   {
