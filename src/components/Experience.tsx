@@ -6,8 +6,8 @@ const experiences = [
   {
     title: "SDET-III",
     company: "Baazi Games",
-    logo: "/lovable-uploads/fb029538-3b9b-473c-8f88-97edc116aa47.png",
-    location: "Bhopal, Madhya Pradesh",
+    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQHRtIJYQqxjCw/company-logo_200_200/company-logo_200_200/0/1630649537633/baazi_games_logo?e=1740614400&v=beta&t=sKZkJelFZoZf4nE1BnfY5vp8MYJ8K3vP9wHjxzNqtSs",
+    location: "Delhi",
     period: "03/2025 - Present",
     description: "Building scalable API automation frameworks (REST, gRPC, GraphQL) to validate high-impact gaming scenarios, enhancing platform stability, performance, and test coverage."
   },
