@@ -3,7 +3,7 @@ import { CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const functionalPoints = [
-  "Create, maintain and expand automation suites (Rest Assured for APIs/integration, Selenium for UI).",
+  "Create, maintain and expand automation suites (Rest Assured for APIs/integration, Selenium for UI, Appium for Mobile tests).",
   "Debug failures at root cause — distinguishing between issues in tests, code, or environment.",
   "Design and implement new automated tests for upcoming features, ensuring risk-based coverage.",
   "Set up and manage test data and environments for reliable, reproducible testing.",
