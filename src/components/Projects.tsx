@@ -1,8 +1,20 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Smartphone, Globe, Server, Database } from "lucide-react";
+import { Smartphone, Globe, Server, Database, Gamepad2 } from "lucide-react";
 
 const projects = [
+  {
+    title: "PokerBaazi Game",
+    description: "Building scalable API automation frameworks to validate high-impact gaming scenarios.",
+    achievements: [
+      "Building scalable API automation frameworks (REST, gRPC, GraphQL) to validate high-impact gaming scenarios",
+      "Enhancing platform stability, performance, and test coverage",
+      "Close collaboration with all stakeholders for test strategies and to prioritize test cases to be automated",
+      "Closely monitor jenkins test execution and make sure all executions are stable and being used by dev teams"
+    ],
+    tech: ["REST", "gRPC", "GraphQL", "Jenkins", "API Testing"],
+    icon: <Gamepad2 className="w-6 h-6 text-accent" />
+  },
   {
     title: "Airtel Merchant & Mitra App",
     description: "Led end-to-end mobile and API automation testing for merchant-focused applications.",
