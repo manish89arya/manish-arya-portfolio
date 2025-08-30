@@ -19,8 +19,8 @@ export const ExperienceTable = () => {
             <TableCell>Baazi Games</TableCell>
             <TableCell>SDET-III</TableCell>
             <TableCell>13 Mar 2025</TableCell>
-            <TableCell>Working</TableCell>
-            <TableCell>0 years 5 months 11 days</TableCell>
+            <TableCell>29 Aug 2025</TableCell>
+            <TableCell>0 years 5 months 16 days</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Airtel Payments Bank</TableCell>
